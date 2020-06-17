@@ -31,7 +31,7 @@ CSS, HTML, and JavaScript (API).
 
 If you choose to write some vanilla JS please do so, but keep your focus on the UI and the CSS.
 
-here is a cool API you can use: ![newsapi.org](https://newsapi.org)
+here is a cool API you can use: [newsapi.org](https://newsapi.org)
 
 ### Screenshot
 
