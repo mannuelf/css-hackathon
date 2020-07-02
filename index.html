@@ -7,12 +7,22 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>CSS Holiday Hackathon BBC Homepage Clone</title>
   </head>
   <body>
-    <header class="app-header">header</header>
+    <header class="app-header">
+      <div class="container">
+        <div class="container-col">logo</div>
+        <div class="container-col">navigation</div>
+      </div>
+    </header>
     <section class="app-body">
       hello world
+      <div class="hero-banner">
+        <h1 class="hero-banner-title">Welcome to the BBC</h1>
+        <div class="jsHeroBannerContent"></div>
+      </div>
     </section>
     <footer class="app-footer">
       footer
@@ -20,5 +30,6 @@
         >view demo</a
       >
     </footer>
+    <script type="module" src="./js/app.js"></script>
   </body>
 </html>
