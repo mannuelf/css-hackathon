@@ -25,10 +25,13 @@ const renderCards = articles => {
   if (articles) {
     articles.forEach((article, i) => {
       let html = `
-        <div class="highlight-card highlight-card-${i}"
-          style="background: url('${article.title}') no-repeat center center">
-          <h2>${article.title}</h2>
-          <p>${article.description}</p>
+        <div 
+          class="hero-banner-card
+          hero-banner-card-${i}"
+          style="background: url('${article.urlToImage}') no-repeat center center">
+          <h2 class="hero-banner-title">${article.title}</h2>
+          <p class="hero-banner-description">${article.description}</p>
+          <span class="hero-banner-ribbon">category</span>
         </div>
       `;
       heroBannerContent.innerHTML += html;
