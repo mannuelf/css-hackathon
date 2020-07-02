@@ -40,3 +40,20 @@ const renderCards = articles => {
     heroBannerContent.innerHTML = "no articles sorry";
   }
 };
+
+const siteTheme = { dark: "light", light: "dark" };
+const theme =
+  localStorage.getItem("theme") ||
+  ((tmp = Object.keys(siteTheme)[0]), localStorage.setItem("theme", tmp), tmp);
+const bodyClass = document.body.classList;
+bodyClass.add(theme);
+
+function themeToggle() {
+  console.log("setting theme");
+  const current = localStorage.getItem("theme");
+  const next = siteTheme[current];
+  bodyClass.replace(current, next);
+  localStorage.setItem("theme", next);
+}
+
+document.querySelector("#jsThemeToggle").onclick = themeToggle;
