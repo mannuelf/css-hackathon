@@ -1,32 +1,39 @@
-:root {
-  --max-width: 80rem;
-  --default-font: "ReithSans,Arial,Helvetica,freesans,sans-serif";
-}
-
 .dark {
   --text-color: hsl(0, 0%, 50%);
   --header-color: hsl(0, 0%, 60%);
   --background: hsl(0, 0%, 20%);
+  --header-bg: hsl(0, 0, 0);
   --highlight-color-a: hsl(5.7, 98.3%, 46.1%);
   --highlight-color-b: hsl(202.8, 65%, 56.3%);
   --highlight-color-c: hsl(113.8, 32.8%, 46.7%);
   --highlight-color-d: hsl(49, 100%, 59.4%);
+  --black: hsl(0, 0, 0);
 }
 
 .light {
   --text-color: hsl(0, 0%, 26.7%);
   --header-color: hsl(0, 0%, 26.7%);
   --background: hsl(0, 0%, 100%);
+  --header-bg: hsl(0, 0, 0);
   --highlight-color-a: hsl(5.7, 98.3%, 46.1%);
   --highlight-color-b: hsl(202.8, 65%, 56.3%);
   --highlight-color-c: hsl(113.8, 32.8%, 46.7%);
   --highlight-color-d: hsl(49, 100%, 59.4%);
+  --black: hsl(0, 0, 0);
+}
+
+:root {
+  --max-width: 80rem;
+  --default-font: "Arial, Helvetica, freesans, sans-serif";
+  --black: hsl(0, 0, 0);
+  --header-bg: hsl(0, 0, 0);
 }
 
 body {
   background-color: var(--background);
   color: var(--text-color);
   font-family: var(--default-font);
+  transition: all 0.2s ease-in-out;
 }
 
 h1,
@@ -36,4 +43,22 @@ h4,
 h5,
 h6 {
   color: var(--header-color);
+}
+
+.app-header {
+  background-color: #000;
+  height: 40px;
+}
+
+.app-header .container {
+  display: flex;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+.app-credits {
+  background-color: var(--black);
 }
