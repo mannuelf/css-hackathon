@@ -1,36 +1,48 @@
 .dark {
   --text-color: hsl(0, 0%, 50%);
   --header-color: hsl(0, 0%, 60%);
-  --background: hsl(0, 0%, 20%);
-  --header-bg: hsl(0, 0, 0);
+  --body-bg: hsl(0, 0%, 20%);
+  --header-bg: hsl(0, 0%, 0%);
   --highlight-color-a: hsl(5.7, 98.3%, 46.1%);
   --highlight-color-b: hsl(202.8, 65%, 56.3%);
   --highlight-color-c: hsl(113.8, 32.8%, 46.7%);
   --highlight-color-d: hsl(49, 100%, 59.4%);
-  --black: hsl(0, 0, 0);
+  --main-nav: hsl(0, 0%, 80%);
+  --footer-color: hsl(0, 0%, 80%);
+  --black: hsl(0, 0%, 100%);
+  --white: hsl(0, 0%, 0%);
+  --nav-border-color: hsl(0, 0%, 60%);
 }
 
 .light {
   --text-color: hsl(0, 0%, 26.7%);
   --header-color: hsl(0, 0%, 26.7%);
-  --background: hsl(0, 0%, 100%);
-  --header-bg: hsl(0, 0, 0);
+  --body-bg: hsl(0, 0%, 100%);
+  --header-bg: hsl(0, 0%, 0%);
   --highlight-color-a: hsl(5.7, 98.3%, 46.1%);
   --highlight-color-b: hsl(202.8, 65%, 56.3%);
   --highlight-color-c: hsl(113.8, 32.8%, 46.7%);
-  --highlight-color-d: hsl(49, 100%, 59.4%);
-  --black: hsl(0, 0, 0);
+  --main-nav: hsl(0, 0%, 100%);
+  --footer-color: hsl(0, 0%, 80%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --nav-border-color: hsl(0, 0%, 60%);
 }
 
 :root {
-  --max-width: 80rem;
-  --default-font: "Arial, Helvetica, freesans, sans-serif";
-  --black: hsl(0, 0, 0);
-  --header-bg: hsl(0, 0, 0);
+  --max-width: 70rem;
+  --header-height: 40px;
+  --default-font: Arial, Helvetica, freesans, sans-serif;
+  --default-font-size: 1em;
+  --default-nav-size: 0.713em;
+  --default-pad-min: 0.5em;
+  --default-pad-med: 1em;
+  --default-pad-max: 1.5em;
+  --default-nav-padding: 20px;
 }
 
 body {
-  background-color: var(--background);
+  background-color: var(--body-bg);
   color: var(--text-color);
   font-family: var(--default-font);
   transition: all 0.2s ease-in-out;
@@ -46,12 +58,37 @@ h6 {
 }
 
 .app-header {
-  background-color: #000;
-  height: 40px;
+  background-color: var(--header-bg);
+  height: var(--header-height);
 }
 
-.app-header .container {
+.app-logo {
+  background: url("../img/bbc-logo.png") no-repeat 0 0;
+  background-size: contain;
+  height: var(--header-height);
+  line-height: var(--header-height);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.screen-only {
+  visibility: hidden;
+}
+
+.app-header > .container {
   display: flex;
+  flex-grow: 1;
+  align-items: stretch;
+  height: inherit;
+  padding: 0 var(--default-pad-min);
 }
 
 .container {
@@ -59,6 +96,81 @@ h6 {
   max-width: var(--max-width);
 }
 
+.main-nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: var(--header-height);
+}
+
+.account-link {
+  padding-left: 10px !important;
+  padding-right: 20px !important;
+}
+
+.icon-account {
+  background-image: url("../img/icon-sign-in.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 16px;
+  width: 32px;
+  margin-bottom: -3px;
+  display: inline-block;
+}
+
+.main-nav li {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li a {
+  color: var(--main-nav);
+  font-family: var(--default-font);
+  font-size: var(--default-nav-size);
+  text-decoration: none;
+  border-left: 1px solid var(--nav-border-color);
+  padding: 13px var(--default-nav-padding);
+  height: var(--header-height);
+  line-height: var(--header-height);
+}
+
+.search {
+  position: relative;
+  line-height: var(--header-height);
+}
+.search-input {
+  width: 110px;
+  border: none;
+  background-color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  color: #000;
+  padding: 4px 6px;
+}
+.search-submit {
+  position: absolute;
+  right: 5px;
+  top: 12px;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .app-credits {
   background-color: var(--black);
+}
+
+.toggle-theme {
+  border: none;
+  background: transparent;
+  color: var(--main-nav);
+  border: 1px solid solid var(--default-border);
+}
+
+.footer {
+  background-color: var(--footer-bg);
 }

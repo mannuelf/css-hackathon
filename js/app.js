@@ -25,7 +25,7 @@ const renderCards = articles => {
   if (articles) {
     articles.forEach((article, i) => {
       let html = `
-        <div 
+        <div
           class="hero-banner-card
           hero-banner-card-${i}"
           style="background: url('${article.urlToImage}') no-repeat center center">
@@ -42,6 +42,7 @@ const renderCards = articles => {
 };
 
 const siteTheme = { dark: "light", light: "dark" };
+let tmp;
 const theme =
   localStorage.getItem("theme") ||
   ((tmp = Object.keys(siteTheme)[0]), localStorage.setItem("theme", tmp), tmp);
