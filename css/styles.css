@@ -8,10 +8,12 @@
   --highlight-color-c: hsl(113.8, 32.8%, 46.7%);
   --highlight-color-d: hsl(49, 100%, 59.4%);
   --main-nav: hsl(0, 0%, 80%);
-  --footer-color: hsl(0, 0%, 80%);
+  --footer-bg: hsl(0, 0%, 95%);
   --black: hsl(0, 0%, 100%);
   --white: hsl(0, 0%, 0%);
   --nav-border-color: hsl(0, 0%, 60%);
+  --footer-links: hsl(0, 0%, 60%);
+  --credits-bg: hsl(0, 0%, 30%);
 }
 
 .light {
@@ -23,10 +25,12 @@
   --highlight-color-b: hsl(202.8, 65%, 56.3%);
   --highlight-color-c: hsl(113.8, 32.8%, 46.7%);
   --main-nav: hsl(0, 0%, 100%);
-  --footer-color: hsl(0, 0%, 80%);
+  --footer-bg: hsl(0, 0%, 95%);
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
   --nav-border-color: hsl(0, 0%, 60%);
+  --footer-links: hsl(0, 0%, 30%);
+  --credits-bg: hsl(0, 0%, 30%);
 }
 
 :root {
@@ -72,11 +76,18 @@ h6 {
 ol,
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 button {
   border: none;
   cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+  border: none;
 }
 
 .screen-only {
@@ -128,9 +139,10 @@ button {
   color: var(--main-nav);
   font-family: var(--default-font);
   font-size: var(--default-nav-size);
+  font-weight: 600;
   text-decoration: none;
   border-left: 1px solid var(--nav-border-color);
-  padding: 13px var(--default-nav-padding);
+  padding: 14px var(--default-nav-padding);
   height: var(--header-height);
   line-height: var(--header-height);
 }
@@ -160,17 +172,62 @@ button {
   background-size: contain;
 }
 
-.app-credits {
-  background-color: var(--black);
-}
-
 .toggle-theme {
   border: none;
   background: transparent;
   color: var(--main-nav);
   border: 1px solid solid var(--default-border);
+  background-image: url("../img/iconfinder_icon-50-half-moon_315813.svg");
+  background-size: cover;
+  height: 40px;
+  width: 40px;
 }
 
-.footer {
+.app-footer {
   background-color: var(--footer-bg);
+  padding: var(--default-pad-med) 0 var(--default-pad-med) 0;
+}
+
+.app-footer h2 {
+  font-size: 1.5rem;
+}
+.app-footer h3 {
+  font-size: 1.125rem;
+}
+
+.headline-list {
+  display: flex;
+}
+.headline-list li  {
+  padding-left: var(--default-pad-med);
+}
+.ws {
+  display: flex;
+  flex-direction: row;
+}
+.ws > div {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.ws > div:nth-child(2) {
+  padding-left: var(--default-pad-med);
+}
+.language-list li {
+    width: 25%;
+    float: left;
+}
+.language-link,
+.link {
+  font-size: 1em;
+  color: var(--footer-links);
+}
+
+.app-footer ul li a,
+.app-credits a {
+  text-decoration: none;
+  color: var(--footer-links);
+}
+.app-credits {
+  padding: var(--default-pad-med);
 }

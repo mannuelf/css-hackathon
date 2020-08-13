@@ -1,8 +1,9 @@
 /*
  * This repo is for education purposes.
- * You are free to copy and use the code as you wish, I only ask you get you
- * own API key at https://newsapi.org/
+ * You are free to copy and use the code as you wish, I only ask you get
+ * your own API key at https://newsapi.org/
  * */
+
 const heroBannerContent = document.querySelector(".jsHeroBannerContent");
 
 const fetchNews = apiKey => {
@@ -26,8 +27,7 @@ const renderCards = articles => {
     articles.forEach((article, i) => {
       let html = `
         <div
-          class="hero-banner-card
-          hero-banner-card-${i}"
+          class="item item-${i}"
           style="background: url('${article.urlToImage}') no-repeat center center">
           <h2 class="hero-banner-title">${article.title}</h2>
           <p class="hero-banner-description">${article.description}</p>

@@ -8,7 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Homepage Clone</title>
+    <title>BBC Clone</title>
   </head>
   <body class="">
     <header class="app-header">
@@ -68,18 +68,24 @@
           </form>
         </div>
         <div class="container-col">
-          <button id="jsThemeToggle" class="toggle-theme">Toggle theme</button>
+          <button id="jsThemeToggle" class="toggle-theme">
+            <span class="screen-only">
+              Toggle theme
+            </span>
+          </button>
         </div>
       </div>
     </header>
+
     <section class="app-body">
       <div class="container">
-        <div class="hero-banner">
-          <h1 class="hero-banner-title">Welcome to the BBC</h1>
-          <div class="jsHeroBannerContent"></div>
+        <div class="welcome-banner">
+          <h1 class="the-title">Welcome to the BBC</h1>
+          <div class="hero-banner jsHeroBannerContent"></div>
         </div>
       </div>
     </section>
+
     <footer class="app-footer">
       <div class="container">
         <section class="languages">
@@ -88,461 +94,460 @@
               >BBC in other languages</a
             >
           </h2>
-          <div class="module-content">
-            <div class="ws">
-              <div class="headlines">
-                <ul class="headline-list">
-                  <li class="headline headline-russian">
-                    <h3 class="headline-language">
-                      <a
-                        class="headline-language-link"
-                        title="Russian"
-                        href="/russian/"
-                        rev="languages|link"
-                      >
-                        Russian
-                      </a>
-                    </h3>
-                    <p class="headline-title" dir="ltr">
-                      <a
-                        class="headline-title-link"
-                        title='20 лет со дня гибели подлодки "Курск": ответы на главные вопросы о трагедии'
-                        href="/russian/features-53739537"
-                        rev="languages|headline"
-                      >
-                        20 лет со дня гибели подлодки "Курск": ответы на главные
-                        вопросы о трагедии
-                      </a>
-                    </p>
-                  </li>
-                  <li class="headline headline-spanish">
-                    <h3 class="headline-language">
-                      <a
-                        class="headline-language-link"
-                        title="Spanish"
-                        href="/mundo/"
-                        rev="languages|link"
-                      >
-                        Spanish
-                      </a>
-                    </h3>
-                    <p class="headline-title" dir="ltr">
-                      <a
-                        class="headline-title-link"
-                        title="La angustiosa historia de los 23 marineros que lucharon por sobrevivir mientras se hundía el submarino ruso Kursk"
-                        href="/mundo/noticias-53637665"
-                        rev="languages|headline"
-                      >
-                        La angustiosa historia de los 23 marineros que lucharon
-                        por sobrevivir mientras se hundía el submarino ruso
-                        Kursk
-                      </a>
-                    </p>
-                  </li>
-                  <li class="headline headline-persian">
-                    <h3 class="headline-language">
-                      <a
-                        class="headline-language-link"
-                        title="Persian"
-                        href="/persian/"
-                        rev="languages|link"
-                      >
-                        Persian
-                      </a>
-                    </h3>
-                    <p class="headline-title" dir="rtl">
-                      <a
-                        class="headline-title-link"
-                        title="آمریکا در پی تمدید تحریم تسلیحاتی ایران با 'پیش نویس یک قطعنامه به مراتب کوتاه تر'"
-                        href="/persian/iran-53746882"
-                        rev="languages|headline"
-                      >
-                        آمریکا در پی تمدید تحریم تسلیحاتی ایران با 'پیش نویس یک
-                        قطعنامه به مراتب کوتاه تر'
-                      </a>
-                    </p>
-                  </li>
-                  <li class="headline headline-portuguese">
-                    <h3 class="headline-language">
-                      <a
-                        class="headline-language-link"
-                        title="Portuguese"
-                        href="/portuguese/"
-                        rev="languages|link"
-                      >
-                        Portuguese
-                      </a>
-                    </h3>
-                    <p class="headline-title" dir="ltr">
-                      <a
-                        class="headline-title-link"
-                        title="4 dúvidas sobre a vacina russa contra covid-19"
-                        href="/portuguese/internacional-53745130"
-                        rev="languages|headline"
-                      >
-                        4 dúvidas sobre a vacina russa contra covid-19
-                      </a>
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="languages">
-                <h2 class="language-title">
-                  <a
-                    href="/ws/languages"
-                    class="language-link"
-                    rev="languages|header"
-                  >
-                    More Languages
-                  </a>
-                </h2>
-                <ul class="languages-list">
-                  <li class="language language-ar">
+          <div class="ws">
+            <div class="headlines">
+              <ul class="headline-list">
+                <li class="headline headline-russian">
+                  <h3 class="headline-language">
                     <a
-                      class="language-link"
-                      href="/arabic/"
-                      title="Arabic service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">Arabic</span>
-                      <span class="language-native"> عربي </span>
-                    </a>
-                  </li>
-                  <li class="language language-as">
-                    <a
-                      class="language-link"
-                      href="/azeri/"
-                      title="Azeri service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">Azeri</span>
-                      <span class="language-native"> AZƏRBAYCAN </span>
-                    </a>
-                  </li>
-                  <li class="language language-bn">
-                    <a
-                      class="language-link"
-                      href="/bengali/"
-                      title="Bangla service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">Bangla</span>
-                      <span class="language-native"> বাংলা </span>
-                    </a>
-                  </li>
-                  <li class="language language-my">
-                    <a
-                      class="language-link"
-                      href="/burmese/"
-                      title="Burmese service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">Burmese</span>
-                      <span class="language-native"> မြန်မာ </span>
-                    </a>
-                  </li>
-                  <li class="language language-zh">
-                    <a
-                      class="language-link"
-                      href="/zhongwen/simp/"
-                      title="Chinese service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">Chinese</span>
-                      <span class="language-native"> 中文网 </span>
-                    </a>
-                  </li>
-                  <li class="language language-fr">
-                    <a
-                      class="language-link"
-                      href="/afrique/"
-                      title="French (for Africa) service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">French</span>
-                      <span class="language-native"> AFRIQUE </span>
-                    </a>
-                  </li>
-                  <li class="language language-ha">
-                    <a
-                      class="language-link"
-                      href="/hausa/"
-                      title="Hausa service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">Hausa</span>
-                      <span class="language-native"> HAUSA </span>
-                    </a>
-                  </li>
-                  <li class="language language-hi">
-                    <a
-                      class="language-link"
-                      href="/hindi/"
-                      title="Hindi service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">Hindi</span>
-                      <span class="language-native"> हिन्दी </span>
-                    </a>
-                  </li>
-                  <li class="language language-id">
-                    <a
-                      class="language-link"
-                      href="/indonesia/"
-                      title="Indonesian service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">Indonesian</span>
-                      <span class="language-native"> INDONESIA </span>
-                    </a>
-                  </li>
-                  <li class="language language-jp">
-                    <a
-                      class="language-link"
-                      href="/japanese/"
-                      title="Japanese service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">Japanese</span>
-                      <span class="language-native"> 日本語 </span>
-                    </a>
-                  </li>
-                  <li class="language language-rw">
-                    <a
-                      class="language-link"
-                      href="/gahuza/"
-                      title="Kirundi service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">Kinyarwanda</span>
-                      <span class="language-native"> GAHUZA </span>
-                    </a>
-                  </li>
-                  <li class="language language-rn">
-                    <a
-                      class="language-link"
-                      href="/gahuza/"
-                      title="Kirundi service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">Kirundi</span>
-                      <span class="language-native"> KIRUNDI </span>
-                    </a>
-                  </li>
-                  <li class="language language-ky">
-                    <a
-                      class="language-link"
-                      href="/kyrgyz/"
-                      title="Kyrgyz service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">Kyrgyz</span>
-                      <span class="language-native"> Кыргыз </span>
-                    </a>
-                  </li>
-                  <li class="language language-mr">
-                    <a
-                      class="language-link"
-                      href="/marathi/"
-                      title="Marathi service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">Marathi</span>
-                      <span class="language-native"> मराठी </span>
-                    </a>
-                  </li>
-                  <li class="language language-ne">
-                    <a
-                      class="language-link"
-                      href="/nepali/"
-                      title="Nepali service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">Nepali</span>
-                      <span class="language-native"> नेपाली </span>
-                    </a>
-                  </li>
-                  <li class="language language-ps">
-                    <a
-                      class="language-link"
-                      href="/pashto/"
-                      title="Pashto service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">Pashto</span>
-                      <span class="language-native"> پښتو </span>
-                    </a>
-                  </li>
-                  <li class="language language-fa">
-                    <a
-                      class="language-link"
-                      href="/persian/"
-                      title="Persian service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">Persian</span>
-                      <span class="language-native"> فارسی </span>
-                    </a>
-                  </li>
-                  <li class="language language-pt-BR">
-                    <a
-                      class="language-link"
-                      href="/portuguese/"
-                      title="Portuguese (for Brazil) service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">Portuguese</span>
-                      <span class="language-native"> BRASIL </span>
-                    </a>
-                  </li>
-                  <li class="language language-ru">
-                    <a
-                      class="language-link"
+                      class="headline-language-link"
+                      title="Russian"
                       href="/russian/"
-                      title="Russian service"
                       rev="languages|link"
                     >
-                      <span class="language-english">Russian</span>
-                      <span class="language-native"> НА РУССКОМ </span>
+                      Russian
                     </a>
-                  </li>
-                  <li class="language language-si">
+                  </h3>
+                  <p class="headline-title" dir="ltr">
                     <a
-                      class="language-link"
-                      href="/sinhala/"
-                      title="Sinhala service"
-                      rev="languages|link"
+                      class="headline-title-link"
+                      title='20 лет со дня гибели подлодки "Курск": ответы на главные вопросы о трагедии'
+                      href="/russian/features-53739537"
+                      rev="languages|headline"
                     >
-                      <span class="language-english">Sinhala</span>
-                      <span class="language-native"> සිංහල </span>
+                      20 лет со дня гибели подлодки "Курск": ответы на главные
+                      вопросы о трагедии
                     </a>
-                  </li>
-                  <li class="language language-so">
+                  </p>
+                </li>
+                <li class="headline headline-spanish">
+                  <h3 class="headline-language">
                     <a
-                      class="language-link"
-                      href="/somali/"
-                      title="Somali service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">Somali</span>
-                      <span class="language-native"> SOMALI </span>
-                    </a>
-                  </li>
-                  <li class="language language-es">
-                    <a
-                      class="language-link"
+                      class="headline-language-link"
+                      title="Spanish"
                       href="/mundo/"
-                      title="Spanish service"
                       rev="languages|link"
                     >
-                      <span class="language-english">Spanish</span>
-                      <span class="language-native"> MUNDO </span>
+                      Spanish
                     </a>
-                  </li>
-                  <li class="language language-sw">
+                  </h3>
+                  <p class="headline-title" dir="ltr">
                     <a
-                      class="language-link"
-                      href="/swahili/"
-                      title="Swahili service"
-                      rev="languages|link"
+                      class="headline-title-link"
+                      title="La angustiosa historia de los 23 marineros que lucharon por sobrevivir mientras se hundía el submarino ruso Kursk"
+                      href="/mundo/noticias-53637665"
+                      rev="languages|headline"
                     >
-                      <span class="language-english">Swahili</span>
-                      <span class="language-native"> SWAHILI </span>
+                      La angustiosa historia de los 23 marineros que lucharon
+                      por sobrevivir mientras se hundía el submarino ruso Kursk
                     </a>
-                  </li>
-                  <li class="language language-ta">
+                  </p>
+                </li>
+                <li class="headline headline-persian">
+                  <h3 class="headline-language">
                     <a
-                      class="language-link"
-                      href="/tamil/"
-                      title="Tamil service"
+                      class="headline-language-link"
+                      title="Persian"
+                      href="/persian/"
                       rev="languages|link"
                     >
-                      <span class="language-english">Tamil</span>
-                      <span class="language-native"> தமிழ் </span>
+                      Persian
                     </a>
-                  </li>
-                  <li class="language language-tr">
+                  </h3>
+                  <p class="headline-title" dir="rtl">
                     <a
-                      class="language-link"
-                      href="/turkce/"
-                      title="Turkish service"
-                      rev="languages|link"
+                      class="headline-title-link"
+                      title="آمریکا در پی تمدید تحریم تسلیحاتی ایران با 'پیش نویس یک قطعنامه به مراتب کوتاه تر'"
+                      href="/persian/iran-53746882"
+                      rev="languages|headline"
                     >
-                      <span class="language-english">Turkish</span>
-                      <span class="language-native"> TÜRKÇE </span>
+                      آمریکا در پی تمدید تحریم تسلیحاتی ایران با 'پیش نویس یک
+                      قطعنامه به مراتب کوتاه تر'
                     </a>
-                  </li>
-                  <li class="language language-uk">
+                  </p>
+                </li>
+                <li class="headline headline-portuguese">
+                  <h3 class="headline-language">
                     <a
-                      class="language-link"
-                      href="/ukrainian/"
-                      title="Ukrainian service"
+                      class="headline-language-link"
+                      title="Portuguese"
+                      href="/portuguese/"
                       rev="languages|link"
                     >
-                      <span class="language-english">Ukrainian</span>
-                      <span class="language-native"> УКРАЇНСЬКA </span>
+                      Portuguese
                     </a>
-                  </li>
-                  <li class="language language-ur">
+                  </h3>
+                  <p class="headline-title" dir="ltr">
                     <a
-                      class="language-link"
-                      href="/urdu/"
-                      title="Urdu service"
-                      rev="languages|link"
+                      class="headline-title-link"
+                      title="4 dúvidas sobre a vacina russa contra covid-19"
+                      href="/portuguese/internacional-53745130"
+                      rev="languages|headline"
                     >
-                      <span class="language-english">Urdu</span>
-                      <span class="language-native"> اردو </span>
+                      4 dúvidas sobre a vacina russa contra covid-19
                     </a>
-                  </li>
-                  <li class="language language-uz">
-                    <a
-                      class="language-link"
-                      href="/uzbek/"
-                      title="Uzbek service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">Uzbek</span>
-                      <span class="language-native"> O'ZBEK </span>
-                    </a>
-                  </li>
-                  <li class="language language-vi">
-                    <a
-                      class="language-link"
-                      href="/vietnamese/"
-                      title="Vietnamese service"
-                      rev="languages|link"
-                    >
-                      <span class="language-english">Vietnamese</span>
-                      <span class="language-native"> TIẾNG VIỆT </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="languages">
+              <h3 class="language-title">
+                <a
+                  href="/ws/languages"
+                  class="language-link"
+                  rev="languages|header"
+                >
+                  More Languages
+                </a>
+              </h3>
+              <ul class="languages-list">
+                <li class="language language-ar">
+                  <a
+                    class="language-link"
+                    href="/arabic/"
+                    title="Arabic service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Arabic</span>
+                    <span class="language-native"> عربي </span>
+                  </a>
+                </li>
+                <li class="language language-as">
+                  <a
+                    class="language-link"
+                    href="/azeri/"
+                    title="Azeri service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Azeri</span>
+                    <span class="language-native"> AZƏRBAYCAN </span>
+                  </a>
+                </li>
+                <li class="language language-bn">
+                  <a
+                    class="language-link"
+                    href="/bengali/"
+                    title="Bangla service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Bangla</span>
+                    <span class="language-native"> বাংলা </span>
+                  </a>
+                </li>
+                <li class="language language-my">
+                  <a
+                    class="language-link"
+                    href="/burmese/"
+                    title="Burmese service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Burmese</span>
+                    <span class="language-native"> မြန်မာ </span>
+                  </a>
+                </li>
+                <li class="language language-zh">
+                  <a
+                    class="language-link"
+                    href="/zhongwen/simp/"
+                    title="Chinese service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Chinese</span>
+                    <span class="language-native"> 中文网 </span>
+                  </a>
+                </li>
+                <li class="language language-fr">
+                  <a
+                    class="language-link"
+                    href="/afrique/"
+                    title="French (for Africa) service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">French</span>
+                    <span class="language-native"> AFRIQUE </span>
+                  </a>
+                </li>
+                <li class="language language-ha">
+                  <a
+                    class="language-link"
+                    href="/hausa/"
+                    title="Hausa service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Hausa</span>
+                    <span class="language-native"> HAUSA </span>
+                  </a>
+                </li>
+                <li class="language language-hi">
+                  <a
+                    class="language-link"
+                    href="/hindi/"
+                    title="Hindi service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Hindi</span>
+                    <span class="language-native"> हिन्दी </span>
+                  </a>
+                </li>
+                <li class="language language-id">
+                  <a
+                    class="language-link"
+                    href="/indonesia/"
+                    title="Indonesian service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Indonesian</span>
+                    <span class="language-native"> INDONESIA </span>
+                  </a>
+                </li>
+                <li class="language language-jp">
+                  <a
+                    class="language-link"
+                    href="/japanese/"
+                    title="Japanese service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Japanese</span>
+                    <span class="language-native"> 日本語 </span>
+                  </a>
+                </li>
+                <li class="language language-rw">
+                  <a
+                    class="language-link"
+                    href="/gahuza/"
+                    title="Kirundi service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Kinyarwanda</span>
+                    <span class="language-native"> GAHUZA </span>
+                  </a>
+                </li>
+                <li class="language language-rn">
+                  <a
+                    class="language-link"
+                    href="/gahuza/"
+                    title="Kirundi service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Kirundi</span>
+                    <span class="language-native"> KIRUNDI </span>
+                  </a>
+                </li>
+                <li class="language language-ky">
+                  <a
+                    class="language-link"
+                    href="/kyrgyz/"
+                    title="Kyrgyz service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Kyrgyz</span>
+                    <span class="language-native"> Кыргыз </span>
+                  </a>
+                </li>
+                <li class="language language-mr">
+                  <a
+                    class="language-link"
+                    href="/marathi/"
+                    title="Marathi service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Marathi</span>
+                    <span class="language-native"> मराठी </span>
+                  </a>
+                </li>
+                <li class="language language-ne">
+                  <a
+                    class="language-link"
+                    href="/nepali/"
+                    title="Nepali service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Nepali</span>
+                    <span class="language-native"> नेपाली </span>
+                  </a>
+                </li>
+                <li class="language language-ps">
+                  <a
+                    class="language-link"
+                    href="/pashto/"
+                    title="Pashto service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Pashto</span>
+                    <span class="language-native"> پښتو </span>
+                  </a>
+                </li>
+                <li class="language language-fa">
+                  <a
+                    class="language-link"
+                    href="/persian/"
+                    title="Persian service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Persian</span>
+                    <span class="language-native"> فارسی </span>
+                  </a>
+                </li>
+                <li class="language language-pt-BR">
+                  <a
+                    class="language-link"
+                    href="/portuguese/"
+                    title="Portuguese (for Brazil) service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Portuguese</span>
+                    <span class="language-native"> BRASIL </span>
+                  </a>
+                </li>
+                <li class="language language-ru">
+                  <a
+                    class="language-link"
+                    href="/russian/"
+                    title="Russian service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Russian</span>
+                    <span class="language-native"> НА РУССКОМ </span>
+                  </a>
+                </li>
+                <li class="language language-si">
+                  <a
+                    class="language-link"
+                    href="/sinhala/"
+                    title="Sinhala service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Sinhala</span>
+                    <span class="language-native"> සිංහල </span>
+                  </a>
+                </li>
+                <li class="language language-so">
+                  <a
+                    class="language-link"
+                    href="/somali/"
+                    title="Somali service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Somali</span>
+                    <span class="language-native"> SOMALI </span>
+                  </a>
+                </li>
+                <li class="language language-es">
+                  <a
+                    class="language-link"
+                    href="/mundo/"
+                    title="Spanish service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Spanish</span>
+                    <span class="language-native"> MUNDO </span>
+                  </a>
+                </li>
+                <li class="language language-sw">
+                  <a
+                    class="language-link"
+                    href="/swahili/"
+                    title="Swahili service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Swahili</span>
+                    <span class="language-native"> SWAHILI </span>
+                  </a>
+                </li>
+                <li class="language language-ta">
+                  <a
+                    class="language-link"
+                    href="/tamil/"
+                    title="Tamil service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Tamil</span>
+                    <span class="language-native"> தமிழ் </span>
+                  </a>
+                </li>
+                <li class="language language-tr">
+                  <a
+                    class="language-link"
+                    href="/turkce/"
+                    title="Turkish service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Turkish</span>
+                    <span class="language-native"> TÜRKÇE </span>
+                  </a>
+                </li>
+                <li class="language language-uk">
+                  <a
+                    class="language-link"
+                    href="/ukrainian/"
+                    title="Ukrainian service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Ukrainian</span>
+                    <span class="language-native"> УКРАЇНСЬКA </span>
+                  </a>
+                </li>
+                <li class="language language-ur">
+                  <a
+                    class="language-link"
+                    href="/urdu/"
+                    title="Urdu service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Urdu</span>
+                    <span class="language-native"> اردو </span>
+                  </a>
+                </li>
+                <li class="language language-uz">
+                  <a
+                    class="language-link"
+                    href="/uzbek/"
+                    title="Uzbek service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Uzbek</span>
+                    <span class="language-native"> O'ZBEK </span>
+                  </a>
+                </li>
+                <li class="language language-vi">
+                  <a
+                    class="language-link"
+                    href="/vietnamese/"
+                    title="Vietnamese service"
+                    rev="languages|link"
+                  >
+                    <span class="language-english">Vietnamese</span>
+                    <span class="language-native"> TIẾNG VIỆT </span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
       </div>
-    </footer>
-    <section class="app-credits">
-      <div class="container">
-        <a href="https://mannuelf.github.io/css-holiday-hackathon" class="link"
-          >view demo</a
-        >
+      <section class="app-credits">
+        <div class="container">
+          <a
+            href="https://mannuelf.github.io/css-holiday-hackathon"
+            class="link"
+            >view demo</a
+          >
 
-        api:
-        <a href="https://newsapi.org/" class="ext-link">www.newsapi.org</a>
-        font:
-        <a href="https://www.bbc.co.uk/branding/reith-font" class="ext-link"
-          >www.bbc.co.uk/branding/reith-font</a
-        >
-        logo:
-        <a
-          href="https://commons.wikimedia.org/wiki/File:BBC.svg"
-          class="ext-link"
-          >www.commons.wikimedia.org/wiki/File:BBC.svg</a
-        >
-      </div>
-    </section>
+          api:
+          <a href="https://newsapi.org/" class="ext-link">www.newsapi.org</a>
+          font:
+          <a href="https://www.bbc.co.uk/branding/reith-font" class="ext-link"
+            >www.bbc.co.uk/branding/reith-font</a
+          >
+          logo:
+          <a
+            href="https://commons.wikimedia.org/wiki/File:BBC.svg"
+            class="ext-link"
+            >www.commons.wikimedia.org/wiki/File:BBC.svg</a
+          >
+        </div>
+      </section>
+    </footer>
     <script type="module" src="./js/app.js"></script>
   </body>
 </html>
