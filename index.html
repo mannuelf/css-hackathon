@@ -50,10 +50,18 @@
               <a href="#">Culture</a>
             </li>
             <li>
-              <a href="#">More > </a>
+              <a href="#" class="more-link">More > </a>
             </li>
           </ul>
         </div>
+        <div class="container-col">
+          <button id="jsThemeToggle" class="toggle-theme">
+            <span class="screen-only">
+              Toggle theme
+            </span>
+          </button>
+        </div>
+
         <div class="container-col">
           <form action="post" class="search">
             <input
@@ -67,21 +75,32 @@
             </button>
           </form>
         </div>
-        <div class="container-col">
-          <button id="jsThemeToggle" class="toggle-theme">
-            <span class="screen-only">
-              Toggle theme
-            </span>
-          </button>
-        </div>
       </div>
     </header>
+
+    <section class="advertising">
+      <div class="container">
+        <small>Advertising</small>
+        <div class="the-advertising-thing"><img src="./img/leaderboard-ad-728x90.png" alt="Advertising"></div>
+      </div>
+    </section>
 
     <section class="app-body">
       <div class="container">
         <div class="welcome-banner">
-          <h1 class="the-title">Welcome to the BBC</h1>
+          <h1 class="the-title">
+            Welcome to the BBC <span class="the-date">Thursday, 13 August</span>
+          </h1>
           <div class="hero-banner jsHeroBannerContent"></div>
+        </div>
+
+        <div class="news-banner">
+          <div class="container">
+            <h2 class="news">News</h2>
+            <div class="news-card-grid">
+            card grid to come here.
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -525,29 +544,27 @@
           </div>
         </section>
       </div>
-      <section class="app-credits">
-        <div class="container">
-          <a
-            href="https://mannuelf.github.io/css-holiday-hackathon"
-            class="link"
-            >view demo</a
-          >
-
-          api:
-          <a href="https://newsapi.org/" class="ext-link">www.newsapi.org</a>
-          font:
-          <a href="https://www.bbc.co.uk/branding/reith-font" class="ext-link"
-            >www.bbc.co.uk/branding/reith-font</a
-          >
-          logo:
-          <a
-            href="https://commons.wikimedia.org/wiki/File:BBC.svg"
-            class="ext-link"
-            >www.commons.wikimedia.org/wiki/File:BBC.svg</a
-          >
-        </div>
-      </section>
     </footer>
+    <section class="app-credits">
+      <div class="container">
+        <a href="https://mannuelf.github.io/css-holiday-hackathon" class="link"
+          >view demo</a
+        >
+
+        api:
+        <a href="https://newsapi.org/" class="ext-link">www.newsapi.org</a>
+        font:
+        <a href="https://www.bbc.co.uk/branding/reith-font" class="ext-link"
+          >www.bbc.co.uk/branding/reith-font</a
+        >
+        logo:
+        <a
+          href="https://commons.wikimedia.org/wiki/File:BBC.svg"
+          class="ext-link"
+          >www.commons.wikimedia.org/wiki/File:BBC.svg</a
+        >
+      </div>
+    </section>
     <script type="module" src="./js/app.js"></script>
   </body>
 </html>

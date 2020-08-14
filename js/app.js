@@ -24,14 +24,17 @@ const news = fetchNews("4bf001f99d6d424a9b3e683d28593d31");
 
 const renderCards = articles => {
   if (articles) {
-    articles.forEach((article, i) => {
+    const fiveArticles = articles.slice(0,5);
+    fiveArticles.forEach((article, i) => {
       let html = `
         <div
           class="item item-${i}"
-          style="background: url('${article.urlToImage}') no-repeat center center">
-          <h2 class="hero-banner-title">${article.title}</h2>
-          <p class="hero-banner-description">${article.description}</p>
-          <span class="hero-banner-ribbon">category</span>
+          style="background-image: url('${article.urlToImage}')">
+            <div class="inner">
+              <h2 class="title">${article.title}</h2>
+              <p class="some-description">${article.description}</p>
+              <span class="ribbon">category</span>
+            </div>
         </div>
       `;
       heroBannerContent.innerHTML += html;
@@ -50,7 +53,6 @@ const bodyClass = document.body.classList;
 bodyClass.add(theme);
 
 function themeToggle() {
-  console.log("setting theme");
   const current = localStorage.getItem("theme");
   const next = siteTheme[current];
   bodyClass.replace(current, next);
