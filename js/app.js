@@ -12,6 +12,7 @@ const fetchNews = apiKey => {
   const url = new URL(api);
 
   fetch(url, {
+    origin: "*",
     "x-requested-with": "XMLHttpRequest"
   })
     .then(response => response.json())
