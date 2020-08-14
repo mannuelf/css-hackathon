@@ -12,6 +12,8 @@ Fork this repo, deploy to your domain or github pages, or netlify
 
 ## Run on local dev
 
+Install dependecies and run server, open http://localhost:9090 in browser
+
 ```bash
 yarn add
 yarn dev
