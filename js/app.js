@@ -11,7 +11,9 @@ const fetchNews = apiKey => {
   const api = `${proxyUrl}/https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${apiKey}`;
   const url = new URL(api);
 
-  fetch(url)
+  fetch(url, {
+    "x-requested-with": "XMLHttpRequest"
+  })
     .then(response => response.json())
     .then(json => {
       const articles = json.articles;
@@ -24,7 +26,7 @@ const news = fetchNews("4bf001f99d6d424a9b3e683d28593d31");
 
 const renderCards = articles => {
   if (articles) {
-    const fiveArticles = articles.slice(0,5);
+    const fiveArticles = articles.slice(0, 5);
     fiveArticles.forEach((article, i) => {
       let html = `
         <div
