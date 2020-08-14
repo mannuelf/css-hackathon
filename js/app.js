@@ -8,12 +8,16 @@ const heroBannerContent = document.querySelector(".jsHeroBannerContent");
 
 const fetchNews = apiKey => {
   const proxyUrl = "https://cors-anywhere.herokuapp.com";
-  const api = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${apiKey}`;
+  const api = `${proxyUrl}/https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${apiKey}`;
   const url = new URL(api);
 
   fetch(url, {
-    origin: "*",
-    "x-requested-with": "XMLHttpRequest"
+    method: "get",
+    headers: {
+      "Access-Control-Allow-Origin": "https://newsapi.org/",
+      "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token",
+      "X-Custom-Url": "https://feu2-bbc-clone.netlify.app"
+    }
   })
     .then(response => response.json())
     .then(json => {
