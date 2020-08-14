@@ -10,6 +10,13 @@ This hackathon is designed to give you practice in CSS, HTML and being detail or
 
 Fork this repo, deploy to your domain or github pages, or netlify
 
+## Run on local dev
+
+```bash
+yarn add
+yarn dev
+```
+
 ## Level 1
 
 CSS and HTML only.
