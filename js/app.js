@@ -8,7 +8,7 @@ const heroBannerContent = document.querySelector(".jsHeroBannerContent");
 
 const fetchNews = apiKey => {
   const proxyUrl = "https://cors-anywhere.herokuapp.com";
-  const api = `${proxyUrl}/https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${apiKey}`;
+  const api = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${apiKey}`;
   const url = new URL(api);
 
   fetch(url, {
