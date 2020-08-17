@@ -11,7 +11,11 @@ const fetchNews = API_KEY => {
   const api = `${proxyUrl}/https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${API_KEY}`;
   const API_URL = new URL(api);
 
-  fetch(API_URL)
+  fetch(API_URL, {
+    headers: {
+      "x-requested-with": "XMLHttpRequest"
+    }
+  })
     .then(response => response.json())
     .then(json => {
       const articles = json.articles;
