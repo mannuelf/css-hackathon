@@ -3,13 +3,14 @@
   --text-color-light: hsl(0, 0%, 55%);
   --header-color: hsl(0, 0%, 60%);
   --body-bg: hsl(0, 0%, 20%);
+  --advertising-bg: hsl(0, 0%, 30%);
   --header-bg: hsl(0, 0%, 0%);
   --highlight-color-a: hsl(5.7, 98.3%, 46.1%);
   --highlight-color-b: hsl(202.8, 65%, 56.3%);
   --highlight-color-c: hsl(113.8, 32.8%, 46.7%);
   --highlight-color-d: hsl(49, 100%, 59.4%);
   --main-nav: hsl(0, 0%, 80%);
-  --footer-bg: hsl(0, 0%, 95%);
+  --footer-bg: hsl(0, 0%, 30%);
   --black: hsl(0, 0%, 100%);
   --white: hsl(0, 0%, 0%);
   --nav-border-color: hsl(0, 0%, 60%);
@@ -24,6 +25,7 @@
   --header-color: hsl(0, 0%, 26.7%);
   --body-bg: hsl(0, 0%, 100%);
   --header-bg: hsl(0, 0%, 0%);
+  --advertising-bg: hsl(0, 0%, 90%);
   --highlight-color-a: hsl(5.7, 98.3%, 46.1%);
   --highlight-color-b: hsl(202.8, 65%, 56.3%);
   --highlight-color-c: hsl(113.8, 32.8%, 46.7%);
@@ -207,7 +209,7 @@ button:focus {
 }
 
 .advertising {
-  background-color: var(--footer-bg);
+  background-color: var(--advertising-bg);
   min-height: 90px;
   text-align: right;
   padding: var(--default-pad-med);

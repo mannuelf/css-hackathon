@@ -3,22 +3,15 @@
  * You are free to copy and use the code as you wish, I only ask you get
  * your own API key at https://newsapi.org/
  * */
-
+const API_KEY = "4bf001f99d6d424a9b3e683d28593d31";
 const heroBannerContent = document.querySelector(".jsHeroBannerContent");
 
-const fetchNews = apiKey => {
+const fetchNews = API_KEY => {
   const proxyUrl = "https://cors-anywhere.herokuapp.com";
-  const api = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${apiKey}`;
-  const url = new URL(api);
+  const api = `${proxyUrl}/https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${API_KEY}`;
+  const API_URL = new URL(api);
 
-  fetch(url, {
-    method: "get",
-    headers: {
-      "Access-Control-Allow-Origin": "https://newsapi.org/",
-      "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token",
-      "X-Custom-Url": "https://feu2-bbc-clone.netlify.app"
-    }
-  })
+  fetch(API_URL)
     .then(response => response.json())
     .then(json => {
       const articles = json.articles;
@@ -27,7 +20,7 @@ const fetchNews = apiKey => {
     .catch(error => console.log(error.message));
 };
 
-const news = fetchNews("4bf001f99d6d424a9b3e683d28593d31");
+fetchNews(API_KEY);
 
 const renderCards = articles => {
   if (articles) {
@@ -50,20 +43,3 @@ const renderCards = articles => {
     heroBannerContent.innerHTML = "no articles sorry";
   }
 };
-
-const siteTheme = { dark: "light", light: "dark" };
-let tmp;
-const theme =
-  localStorage.getItem("theme") ||
-  ((tmp = Object.keys(siteTheme)[0]), localStorage.setItem("theme", tmp), tmp);
-const bodyClass = document.body.classList;
-bodyClass.add(theme);
-
-function themeToggle() {
-  const current = localStorage.getItem("theme");
-  const next = siteTheme[current];
-  bodyClass.replace(current, next);
-  localStorage.setItem("theme", next);
-}
-
-document.querySelector("#jsThemeToggle").onclick = themeToggle;
