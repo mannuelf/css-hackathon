@@ -7,7 +7,7 @@ const API_KEY = "4bf001f99d6d424a9b3e683d28593d31";
 const heroBannerContent = document.querySelector(".jsHeroBannerContent");
 
 const fetchNews = API_KEY => {
-  const proxyUrl = "https://cors-anywhere.herokuapp.com";
+  const proxyUrl = "https://noroffcors.herokuapp.com";
   const api = `${proxyUrl}/https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${API_KEY}`;
   const API_URL = new URL(api);
 
